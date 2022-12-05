@@ -496,8 +496,7 @@
 <form action="#">
     <label for= "email">
         
-<input type="email" name="email" id="email" autofocus placeholder="E-mail" style="border:1px solid rgba(255, 255, 255, 0.3); background-color:#2F303A; filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius:4px; color:#fff;">
+<input type="email" class="footer-email" name="email" id="email" placeholder="E-mail">
     </label>
     <button type="submit" class="subscribe-button">Subscribe
         <svg class="send-button-icon" width="24" height="24">
@@ -518,45 +517,62 @@ border-radius:4px; color:#fff;">
         <use class="close-icon" href="./images/symbol-defs.svg#icon-Vector"></use>
           </svg>
         </button>
-         <div>
-        <h3 class="modal-window-heading">Leave your information and we'll call you back</h3>
-    </div>
-    <div class="modal-window-form">
-            <form action="#">
-                <label for="name">
-                    <span>Name</span>
-                   <input type="text" class="name" name="name" id="name"   >
-<svg class="form-icon" width="15" height="15">
+        <form action="#" class="modal-form">
+      
+        <h4 class="form-title">Leave your information and we'll call you back</h4>
+    
+    <div class="modal-field-wrapper">
+            
+                <label for="name" class="form-label">Name</label>
+                <div class="modal-input-wrapper">
+                    
+                <input type="text" class="modal-input" name="name" id="name" minlength="3">
+<svg class="modal-input-icon" width="15" height="15">
     <use href="./images/symbol-defs2.svg#icon-person"></use>
 </svg>
-                </label>
-                <label for="telephone">
-                    <span>Telephone</span>
-                    <input type="tel" class="telephone" name="telephone" id="telephone">
-<svg class="form-icon" width="15" height="15">
+                </div>
+    </div>
+             <div class="modal-field-wrapper">
+                <label for="telephone" class="form-label">Telephone</label>
+                    <div class="modal-input-wrapper">
+                    <input type="tel" class="modal-input" name="telephone" id="telephone">
+<svg class="modal-input-icon" width="15" height="15">
     <use href="./images/symbol-defs2.svg#icon-telephone"></use>
 </svg>
-                </label>
-                <label for="email">
-                    <span>E-mail</span>
-                    <input type="email" class="email" name="email" id="email" >
-<svg class="form-icon" width="15" height="15">
+</div>
+</div>
+             <div class="modal-field-wrapper">
+                <label for="email" class="form-label">E-mail</label>
+                 <div class="modal-input-wrapper">
+                    <input type="email" class="modal-input" name="email" id="email"  >
+<svg class="modal-input-icon" width="15" height="15">
     <use href="./images/symbol-defs2.svg#icon-e-mail"></use>
 </svg>
-                </label>
-                <label for="comments">
-                    Comments
-                    <textarea name="comments" class="comments" id="comments" placeholder="Enter the text">
-
-                    </textarea>
-                </label>
-                <section class="checkbox"> 
-                    <input type="checkbox"/>
-                    <label>I agree with the newsletter and accept the Terms and Conditions</label>
-                </section>
-                <section class=modal-send-button>
+</div>
+</div>
+              <div class="modal-field-wrapper">
+                <label for="comments" class="form-label">Comments</label>
+                   <div class="modal-input-wrapper">
+                   <textarea name="comments" class="modal-input" id="comments" placeholder="Enter the text">
+                   </textarea>
+                   </div>
+                  </div>
+                 <div class="modal-checkbox-div">
+                     <input type="checkbox" class="checkbox" type="checkbox" name="terms"
+                     value="agree" required id="checkbox-policy" />
+                    <label class="modal-checkbox" for="checkbox-policy" >
+                      <span>agree with the newsletter and accept the
+                      <a class="terms-conditions" href="#">
+                      Terms and Conditions
+                      </a>
+                      </span> 
+                    </label>
+                    </div>
+                   
+               
+               
                     <button type="submit" class="send-button">Send</button>
-                </section>
+             
             </form>
          </div>
          </div>
