@@ -661,10 +661,20 @@ label input {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.subscribe-button:hover,
+.subscribe-button:focus {
+  color: var(--border-color);
+}
+
 .send-button-icon {
   background-color: var(--logo-color);
   fill: #ffffff;
   padding-left: 30px;
+}
+
+.send-button-icon:hover,
+.send-button-icon:focus {
+  fill: var(--border-color);
 }
 
 .backdrop {
@@ -830,6 +840,11 @@ label input {
   border-radius: 4px;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.send-button:hover,
+.send-button:focus {
+  color: var(--border-color);
 }
 
 /*PORTFOLIO PAGE STYLING*/
